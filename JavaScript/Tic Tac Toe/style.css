@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+h1{
+ color: white;
+ font-size: xxx-large;
+}
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  background-image: url('flat-mountains.png');
+}
+.game{
+  height: 45%;
+  width: 25%;
+  /* background-color: blue; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 9px;
+  border: none;
+  border-color: transparent;
+}
+
+.box{
+  border: 3px solid black;
+  font-size: xxx-large;
+}
+.box:active{
+  background-color: rgb(118, 185, 118);
+}
+#reset{
+  background-color: rgb(52, 135, 52);
+  color: white;
+  padding: 10px 19px;
+  border-radius: 5px;
+  font-size: larger;
+  border: none;
+}
+
+#result{
+   color: white;
+   font-size: x-large;
+}

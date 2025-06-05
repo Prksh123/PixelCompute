@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="alert" class="alert" style="display: none;">
+        <span id="alert-message">Please fill in all fields</span>
+        <button id="okAlert" onclick="closeAlert()">OK</button>
+        <button id="close-alert" onclick="closeAlert()">✖</button>
+      </div>
+    <div class="container">
+        <header>
+        <h1>To-Do List</h1>
+        <input type="text" id="search" placeholder="Search Tasks...">
+        </header>
+        <middle>
+        <input type="text" id="task" required>
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+        <button class="btn" onclick="addTask()">Add Task</button>
+        <button id="updateBtn" onclick="updateTask()" style="display: none;">Update Task</button>
+         </middle>
+        <h2>Due Tasks</h2>
+        <ul type="none" id="dueList"></ul>
+
+        <h2>Upcoming Tasks</h2>
+        <ul type="none" id="upList"></ul>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

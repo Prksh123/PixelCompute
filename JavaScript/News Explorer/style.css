@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+.container{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content{
+    margin-top: 3rem;
+  width: 80%;
+  background-color: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 1.5rem;
+}
+
+.content > input {
+  width: 100%;
+  height: 2rem;
+  border: 1px solid grey;
+  padding: 6px 7px;
+  border-radius: 7px;
+}
+
+h1{
+  font-size: xxx-large;
+}
+.block{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.buttons{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.buttons > button{
+  padding: 4px 2rem;
+  background-color: rgb(234, 240, 240);
+  border-radius: 7px;
+  border: none;
+}
+
+/* .buttons > button:focus{
+    background-color: black;
+    color: white;
+} */
+
+.buttons > button.active {
+  background-color: black;  
+  color: white;             
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.news{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+   gap: 1rem;
+   
+}
+.full{
+  grid-column: span 2;
+  background-color: azure ;
+}
+.all{
+    background-color: rgb(234, 240, 240) ;
+    border-radius: 10px;
+    padding: 9px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: justify;
+}
+
+
+.more{
+  background-color: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin: auto;
+}
+.highlight{
+ color: red;
+}

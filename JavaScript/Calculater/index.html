@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <input type="text" id="display" placeholder="0" >
+            <br>
+            <div class="btns">
+            <div class="num">
+            <button onClick="joinToDisplay('1')" >1</button>
+            <button onClick="joinToDisplay('2')">2</button>
+            <button onClick="joinToDisplay('3')">3</button>
+            <button onClick="joinToDisplay('4')">4</button>
+            <button onClick="joinToDisplay('5')">5</button>
+            <button onClick="joinToDisplay('6')">6</button>
+            <button onClick="joinToDisplay('7')">7</button>
+            <button onClick="joinToDisplay('8')">8</button>
+            <button onClick="joinToDisplay('9')">9</button>
+            <button onClick="joinToDisplay('.')">.</button>
+            <button onClick="joinToDisplay('0')">0</button>
+            <button onClick="calculate()">=</button>
+            </div>
+            <div class="op">
+            <button onClick="clearResult()">C</button>
+            <button onClick="addOperation('%')">%</button>
+            <button onClick="addOperation('+')">+</button>
+            <button onClick="addOperation('-')">-</button>
+            <button onClick="addOperation('/')">/</button>
+            <button onClick="addOperation('*')">*</button>
+            <button onClick="deleteOne()">Del</button>
+            <button onClick="addOperation('^')">Exp</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
